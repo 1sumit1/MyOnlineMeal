@@ -1,0 +1,219 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* navigation bar */
+
+#navbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin: 7px 20px;
+}
+#logo img{
+    height: 30px;
+    width: 30px;
+}
+/* List style */
+
+#navbar ul{
+    display: flex;
+    
+} 
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+    
+    
+} 
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    display: block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url('./img/spread.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 3.5rem;
+    
+}
+
+#home p{
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+/* services center */
+
+#services{
+    display: flex;
+    margin: 7px;
+}
+
+#services .box{
+    border: 2px solid grey;
+    margin: 6px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(219, 233, 235);
+    box-shadow: 4px 4px grey;
+}
+
+#services .box img{
+    height: 140px;
+    display: block;
+    margin: auto;
+}
+
+/* client section */
+
+#client-section{
+    height: 270px;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('./img/vegetables.jpg') no-repeat center center/cover;
+    height: 260px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 120px;
+    
+}
+
+.client-item{
+    padding: 30px;
+}
+
+/* contact section */
+#contact{
+    height: 450px;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('./img/coffee.jpg') no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#contact-box input, #contact-box textarea{
+    /* font-family: 'Secular One', sans-serif; */
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+/* footer */
+footer{
+    font-family: 'Secular One', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* utility class */
+.h-primary{
+      font-family: 'Secular One', sans-serif;
+      font-size: 2.3rem;
+      margin-top: 12px;     
+}
+
+.h-secondry{
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.btn{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(241, 154, 154);
+    color: black;
+}
+.center{
+    text-align: center;
+}
